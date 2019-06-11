@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <style type="text/css">
+    body {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      color: black;
+      font-family: Cambria;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: black;
+      font-family: Cambria;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    ol {
+      margin-left: 1em;
+      padding-left: 0;
+    }
+
+    table {
+      font-family: Cambria;
+      font-size: 13px;
+    }
+
+    p {
+      font-family: Cambria;
+      font-size: 20px;
+    }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .paragraph-title {
+      color: black;
+      font-family: Cambria;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .seller-data-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-left: 2em;
+    }
+
+    .customer-data-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .customer-data-table td {
+      border: 1px solid #5b9bd5;
+      width: 50%;
+      text-align: left;
+      padding: 8px;
+    }
+
+    .customer-data-table td:nth-child(1) {
+      background-color: #deeaf6;
+    }
+
+  </style>
+</head>
+
+<body>
+<img class="logo" src="https://www.pienvarastokeskus.fi/wp-content/uploads/2018/06/Etusivukuva-e1528806619620.png">
+
+<h1>PIENVARASTOTILAN VUOKRASOPIMUS</h1>
+
+<ol start="1">
+	<li class="paragraph-title">VUOKRANANTAJA / VARASTOPALVELUN TUOTTAJA</li>
+</ol>
+
+<table class="seller-data-table">
+  <tr>
+    <td>Yritys:</td>
+    <td>Suomen Pienvarastokeskus Ky</td>
+  </tr>
+  <tr>
+    <td>Y-tunnus:</td>
+    <td>2850820-1</td>
+  </tr>
+  <tr>
+    <td>E-mail:</td>
+    <td>info@pienvarastokeskus.fi</td>
+  </tr>
+  <tr>
+    <td>www:</td>
+    <td>www.pienvarastokeskus.fi</td>
+  </tr>
+</table>
+
+<ol start="2">
+	<li class="paragraph-title">VUOKRALAISEN / ASIAKKAAN TIEDOT</li>
+</ol>
+
+ <table class="customer-data-table">
+  <tr>
+    <td>Yritys (jos vuokralainen on yritys):</td>
+    <td id="company"></td>
+  </tr>
+   <tr>
+    <td>Y-tunnus:</td>
+    <td id="businessId"></td>
+  </tr>
+  <tr>
+    <td>Nimi:</td>
+    <td id="name"></td>
+  </tr>
+  <tr>
+    <td>Henkilötunnus (jos ei yritys):</td>
+    <td id="identityNumber"></td>
+  </tr>
+  <tr>
+    <td>Puhelin:</td>
+    <td id="phoneNumber"></td>
+  </tr>
+  <tr>
+    <td>Sähköposti:</td>
+    <td id="email"></td>
+  </tr>
+  <tr>
+    <td>Postiosoite:</td>
+    <td id="address"></td>
+  </tr>
+</table>
+
+<!--
+  Kopsaa yllä näkyvää taulu-mallia alla näkyviin puutteellisiin kenttiin. En jaksanut tehdä loppuun...
+-->
+
+<p>
+Yritys (jos vuokralainen on yritys): <br/>
+Y-tunnus: <br/>
+Nimi: <br/>
+Henkilötunnus (jos ei yritys): <br/>
+Puhelin: <br/>
+Sähköposti: <br/>
+Postiosoite: <br/>
+Postinumero: <br/>
+Postitoimipaikka: <br/>
+Sopimuksen alkamispäivä: <br/>
+Varastopaikkakunta: <br/>
+Varastotilan tarkka osoite: <br/>
+Pienvarastotilan numero: <br/>
+Pienvaraston koko (k-m2: <br/>
+Vuokran määrä €/kk: <br/>
+Vuokravakuus, €: <br/>
+Hyllyllinen pienvarasto: <br/>
+
+Minimivuokra-aika: 3 kk<br/>
+Irtisanomisaika, täyttä kalenterikuukautta (kk): 2 kk<br/>
+Lisätietoja: <br/>
+</p>
+
+<p> Ovikoodit pienvarastokeskukseen sekä henkilökohtaiseen pienvarastoosi saat sähköpostitse tämän vuokrasopimuksen allekirjoittamisen jälkeen päivää ennen tai viimeistään vuokrasopimuksen alkamispäivän aamuna.</p>
+
+<ol start="3">
+	<li class="paragraph-title">VUOKRANMAKSU</li>
+</ol>
+
+<p> Vuokra maksetaan <strong> kuukausittain*</strong> erillisellä laskulla. Olemme siirtäneet laskujen lähetyksen ja maksuvalvonnan Finvoicer Group Oy:n laskutuspalveluun. Palvelua tai tilausta koskevissa asioissa pyydämme ottamaan yhteyttä suoraan meihin. Maksamiseen liittyvissä asioissa pyydämme ottamaan yhteyttä Finvoicer Group Oy:n asiakaspalveluun.<br/><br/>
+
+Laskut tulevat vuokralaisille ensisijaisesti sähköpostitse osoitteesta info@pienvarastokeskus.fi tai e-laskulla. Mikäli haluat laskun e-laskuna, ilmoita siitä meille sähköpostitse. Laskun voi saada myös paperisena kirjeenä kotiin, jolloin veloitamme laskutuslisän 5 € per lasku. Yrityksille laskutusvaihtoehtona on myös verkkolasku, jota varten yrityksen tulee lähettää heidän verkkolaskutustietonsa meille sähköpostitse.<br/><br/>
+
+Mikäli vuokrauksesi alkaa kesken kuukauden, veloitetaan jäljellä olevilta kuukauden päiviltä päivävuokraa (jäljellä päivien lkm / 30 x kk-vuokra). Kesken kuukauden alkanut vuokranmaksu veloitetaan erillisellä laskulla ellei toisin ole sovittu.<br/><br/>
+
+
+* Jos haluat pidemmän laskutusvälin, ilmoita siitä meille sähköpostitse info@pienvarastokeskus.fi </p><br/>
+
+<h1> 4.	VUOKRASOPIMUKSEN EHDOT </h1>
+
+<p><strong> Tämän vuokrasopimuksen allekirjoituksella vuokralainen vahvistaa lukeneensa varastojen vuokrasopimuksen ehdot ja sitoutuu niitä noudattamaan. Oikeus vuokrasopimusehtojen muutoksiiin pidätetään. </strong> </p>
+
+<h2> 4.1 § Varastotilan kunto, varastoitavat tavarat ja niiden säilytys sekä tiloissa oleskelu ja niiden käyttö </h2>
+
+<p>
+Varastotila vuokrataan siinä kunnossa ilman sisustusta ja sen kokoisena kuin se on tämän sopimuksen tekohetkellä vuokrasopimuksessa määritelty vuokralaisen omaan käyttöön. Mikäli varastotila vahingoitetaan, vuokralainen on siitä vastuussa, ellei hän voi kiistatta osoittaa, että vahinko ei ole hänen eikä kenenkään hänen vastuullaan olevan aiheuttama.<br/><br/>
+
+Pienvarastojen pinta-alat eivät ole tarkastusmitattuja. Pinta-alat ovat kerrosaloja. Huomio, että huoneala ei ole sama asia kuin kerrosala. Pinta-alat pyöristetään laskennallisesta pinta-alasta ylöspäin 0,5m2 tarkkuudella. Vuokralaisen on pidettävä pienvarastotilaa järjestyksessä ja huolehdittava sen kunnossapidosta ja puhtaudesta.<br/><br/>
+
+Vuokranantajan toimesta Pienvarastokeskus.fi:ssä on vuokralaisen käytettäväksi toimitettu erilaisia tavarankuljetusvälineitä yms. Vuokralaisen tulee aina käytön jälkeen palauttaa nämä paikoilleen. Niiden poisvienti kiinteistöstä on kielletty.<br/><br/>
+
+Vuokralaisella ei ole oikeutta ilman vuokranantajan kirjallista suostumusta varastoida kolmannen osapuolen tavaroita vuokraamassaan pienvarastossa. Pienvarastoa saa käyttää vain omassa omistuksessa olevan kuivan kappaletavaran varastointiin.<br/><br/>
+
+Varastotiloja ei saa käyttää autojen huoltotoimenpiteisiin eikä palavien aineiden, kemikaalien ja nesteiden sekä esim. hajuhaittoja aiheuttavan irtaimiston varastointiin.<br/><br/>
+
+Varastotiloissa ei saa valmistaa, huoltaa, rakentaa tai tehdä muita vastaavanlaisia asioita.<br/><br/>
+
+Jos vuokranantaja arvioi, että varastoitu tavara voi olla vahingoksi ihmisille tai kiinteistölle, on vuokralainen velvollinen poistamaan välittömästi vuokranantajan vaatimuksesta kyseisen varastoidun tavaran.<br/><br/>
+
+Varastoitavien tavaroiden varastoon asettelu on vuokralaisen vastuulla. Vuokralainen on vastuussa tavaroidensa pakkaamisesta niin, että niille ei aiheudu vahinkoa muiden tiloissa säilytettävien tavaroiden johdosta. Vuokralaisen tulee kiinnittää erityisesti huomiota varastotilan ilmanvaihtoon ja -kiertoon, jotta varastoitava irtaimisto pysyy hyvässä kunnossa. Liian tiivistä varastointia tulee välttää ja kiertoilmalle tulee jäädä kulkureittejä varastotilassa. Hyvän säilytystavan mukaisesti kannattaisi irtaimisto varastoitaessa olla lattiasta irti min. 10 cm korkeudella esim. hyllyjen avulla, mikäli mahdollista.<br/><br/>
+
+Asiaton oleskelu tai yöpyminen on ehdottomasti kielletty Pienvarastokeskus.fi:n varasto- ja toimitiloissa. Varastoitaessa lattiakuorma ei saa ylittää 1500 kg/m2. Räjähteiden, helposti tai itsestään syttyvien, ympäristölle ja terveydelle vaarallisten tai haittaa aiheuttavien aineiden ja nesteiden varastointi on kielletty. Eloperäisten aineiden varastointi on kielletty.<br/><br/>
+
+Tavaroiden säilytys on sallittu ainoastaan sopimuksessa mainitussa varastossa ja vain sopimuksessa määritetyn vuokrakauden ajan. Tavaroiden säilytys varaston käytävillä ja muissa yleisissä tiloissa on ehdottomasti kielletty. Vuokranantajalla on oikeus poistaa ja hävittää varastotilan ulkopuolelle jätetyt tavarat vuokralaisen kustannuksella välittömästi ilman erillistä ilmoitusta.<br/><br/>
+
+Mahdollisista vuokralaisen jättämistä ylimääräisistä tavaroista ja jätteistä kiinteistön alueelle vuokranantaja on oikeutettu perimään viidensadan (500) euron vahingonkorvausmaksun erillisellä laskulla. Vahingonkorvausmaksu on arvonlisäverovapaa maksu.<br/><br/>
+
+Vuokranantajalla on oikeus mennä vuokrattuun tilaan välttämättömien huolto- ja korjaustoimenpiteiden vuoksi sekä hätätilassa.<br/><br/>
+
+Tupakointi on varastotiloissa ehdottomasti kielletty.<br/><br/>
+
+Auton tarpeeton joutokäynti tiloissa on kielletty.<br/><br/>
+
+Pienvarastokeskuksen piha-alueella on pitkäaikainen pysäköinti kielletty ilman erillistä kirjallista lupaa.<br/><br/>
+
+Vuokralaisen on huolehdittava varastossa käyntinsä yhteydessä pääoven sulkeutumisesta.<br/><br/>
+
+Yleisten tilojen käyttö vuokralaisen omaan toimintaan muutoin kuin kulkuväylänä on kielletty.
+Vuokralainen on velvollinen itse tarkistamaan, että varastotila ja sen ulkopuoliset tilat soveltuvat kaikin puolin vuokralaisen käyttöön.<br/>
+
+<h2> 4.2 § Lämmitys, sähkö, vakuutus ja lukitus </h2>
+
+<p> Lämpö ja valaistus sisältyvät vuokraan. Vuokralaisen mahdollisesta muusta energian- ja vedenkulutuksesta on vuokranantajan kanssa aina sovittava erikseen. Varastotilat voidaan sulkea turvallisuuden tai huoltotoimenpiteiden vuoksi vuokranantajan erikseen määrääminä aikoina.<br/><br/>
+
+Pienvarastokeskus.fi takaa kiinteistön sisäilman lämpötilan pysymisen nolla-asteen yläpuolella säilytysalueilla, joita ei ole tarkoitettu kylmäsäilytykseen. Takuu ei koske sähkökatkotilanteita tai muita force majeure tilanteita.<br/><br/>
+
+Vuokranantaja ei ole ottanut vakuutusta säilytettäville tavaroille eikä ole muutenkaan vastuussa niistä missään tapauksissa esim. varkaustapausten, ilkivallan, hajuhaittojen, kosteusvahinkojen, tuhoeläinvahinkojen tai muun vastaavan syyn osalta. Vuokralainen voi hankkia omille säilytettäville tavaroilleen oman irtaimistovakuutuksen korvaamaan esimerkiksi edellä mainittuja vahinkoja. Irtaimistovakuutus saattaa kuulua valmiiksi myös osaan kotivakuutuksista, jonka ehdot vuokralaisen kannattaa tarkastaa omasta vakuutusyhtiöstään.<br/><br/>
+
+Vuokranantaja ei ole myöskään vastuussa teknisen vian, kiinteistöjen vahinkojen ja muiden vaurioiden tai muun sellaisen aiheuttamista välillisistä tai välittömistä vahingoista tai viivästymisistä force majeure -periaatteiden mukaisesti. Kiinteistöissä on kiinteistövakuutus, joka ei kuitenkaan korvaa kiinteistössä säilytettävän irtaimiston vahinkoja.<br/><br/>
+
+Vuokralainen vastaa omaisuutensa vakuuttamisesta ja oven lukitsemisesta riippulukolla (koodilukko), jonka koodi tulee aina olla vuokranantajan tiedossa hätätilanteita varten. Vuokralaisen tulee ilmoittaa vuokranantajan rekisteriin hätätilanteita varten, mikäli se ei jo ole vuokranantajan tiedossa. Vuokranantaja toimittaa koodilukon ja se sisältyy vuokrahintaan.<br/><br/>
+
+Vuokralainen on tietoinen, että kiinteistössä, johon pienvarastotila kuuluu, varastoidaan myös muiden Pienvarastokeskus.fi:n asiakkaiden/vuokralaisten tavaroita, jotka saattavat aiheuttaa kiinteistön sisäilman laadun heikkenemistä. Pienvarastokeskus.fi ei vastaa muiden asiakkaiden tavaroista tai sopimusrikkomuksista ja niiden mahdollisista muille pienvarastokeskuksen vuokralaisille / asiakkaille aiheutuvista vahingoista, mutta pyrkii välittömästi tiedon saatuaan korjaamaan haitan ja normalisoimaan tilanteen.<br/><br/>
+
+Vuokranantajalla on oikeus lukita vuokralaisen lukitsematta jätetty varasto ja periä vuokralaiselta toimenpiteestä aiheutuneet kulut voimassaolevan hinnaston mukaisesti. </p><br/>
+
+<h2> 4.3 § Varastotilan muutostyöt ja kunto sopimuksen päättyessä </h2>
+
+<p> Vuokralaisella ei ole oikeutta tehdä rakenteiden muutostöitä. Minkäänlaisia vuokralaisen toimintaan liittyviä ulkoisia merkkejä, tekstejä, logoja, kuvia tai muita symboleja ei sallita. <br/><br/>
+
+Varasto on sopimuksen päätyttyä palautettava samassa kunnossa kuin se oli sopimusta tehtäessä eli täysin tyhjennettynä ja siivottuna. <br/><br/>
+
+Seiniin, lattiaan tai kattoon kiinnittäminen ja niiden puhkominen on kiellettyä. Hyllyjen käyttöä suositellaan ja niiden on oltava vapaasti lattialla seisovia.<br/></p>
+
+<h2> 4.4 § Vuokrasopimuksen alkaminen,  pituus ja päättyminen </h2>
+
+<p> Vuokrakausi, joka toimii hinnoitteluperusteena, on kalenterikuukausi. Vuokraus voi alkaa kesken kuukauden, jolloin veloitetaan jäljelläolevilta kuukauden päiviltä päivävuokraa (kk-vuokra / 30 x jäljellä päivien lkm).<br/><br/>
+
+Vuokrasopimus on toistaiseksi voimassaoleva ja vuokrasopimuksen irtisanomisaika on kaksi (2) täyttä kalenterikuukautta eli käytännössä irtisanomisaika on irtisanomispäivää seuraavat kaksi (2) täyttä kalenterikuukautta.  Irtisanomisaika aloitetaan laskemaan sen kalenterikuukauden viimeisestä päivästä, jolloin irtisanominen on tehty.<br/><br/>
+
+Vuokranantajalla on aina oikeus tarkistaa vuokralaisen luottotiedot. Mikäli vuokralaisella on tai vuokralaiselle syntyy luottohäiriömerkintä, vuokranantajalla on oikeus periä kolmen (3) kuukauden vuokravakuus, jota voidaan käyttää kaikkiin tähän vuokrasopimukseen liittyviin vuokralaisen aiheuttamiin kustannuksiin tai vuokranmaksulaiminlyönteihin. Vuokravakuus palautetaan irtisanomisajan jälkeen noin kahden viikon kuluttua, kun varastotila on todettu tyhjennetyksi ja siivotuksi. Vuokranantajalla on oikeus kuitata avoimia saataviaan vuokravakuusta. Palautuksen edellytyksenä on, että vuokralainen on ilmoittanut pankkitilinumeronsa vuokranantajalle sähköpostitse.<br/><br/>
+
+Mikäli sopimus tehdään yrityksen nimiin, eikä allekirjoittajalla ole riittäviä valtuuksia sopimuksen tekoon, vuokranantajalla on oikeus pitää sopimuksen allekirjoittajaa sopimusosapuolena ja siirtää sopimus hänen nimiinsä.<br/><br/>
+
+Vuokralaisen tulee aina vuokrasopimusta tehtäessä ilmoittaa henkilötunnus (yksityishenkilöt) tai y-tunnus (yritykset).<br/><br/>
+
+Mikäli Pienvarastokeskus.fi-kiinteistö joutuu tulipalon, vahingon, tuhotyön tai muun tapaturman kohteeksi ja toimitilat menevät  käyttökelvottomaksi, vuokrasopimus purkaantuu välittömästi. Tällöin Pienvarastokeskus.fi:llä ei ole velvollisuutta tarjota vuokralaiselle vuokrattavaksi muita varastotiloja ennen tilojen kunnostusta/uudelleenrakentamista tai sen jälkeen.<br/><br/>
+
+Vuokralaisen tulee irtisanoa vuokrasopimus kirjallisesti ensisijaisesti sähköpostitse info@pienvarastokeskus.fi -osoitteeseen ja toissijaisesti muilla kirjallisilla menetelmillä esim. kirjepostina.<br/><br/>
+
+Vuokrasopimus päättyy aina kuukauden viimeiseen päivään. Vuokrasopimuksen päättyessä vuokralainen tyhjentää ja phdistaa huolellisesti varastotilan, poistaa ja palauttaa ovesta lukon vuokranantajalle jättämällä koodilukon pienvarastotilan oveen paikalleen klo 12.00 mennessä. Jos koodilukkoa ei palauteta vuokranantajalle sopimuksen päättyessä, vuokralainen on velvollinen korvaamaan koodilukosta 50,00 euroa 14 vuorokauden sisällä sopimuksen päättymisestä. Mikäli Asiakas ei ole poismuuttopäivänä viimeistään klo 12.00 täyttänyt tätä velvollisuutta, Pienvarastokeskus.fi:llä on oikeus tyhjennyttää ja puhdistuttaa vuokrakohde. Asiakas on tällöin velvollinen korvaamaan vuokrakohteen tyhjennyksestä ja puhdistamisesta aiheutuneet kulut, kuitenkin vähintään 150,00 euroa. </p> <br/>
+
+<h2> 4.5 § Vuokra ja vuokran maksu sekä varastoitavien tavaroiden hävitys ja realisointi </h2>
+
+<p> Vuokrahinta on arvonlisäverovapaa (Arvonlisäverolaki, 27§).<br/><br/>
+
+Vuokralainen saa kulkukoodin / kulkukortin ja varastotilan haltuunsa allekirjoitettuaan vuokrasopimuksen sekä maksettuaan mahdollisen vuokravakuuden (jos luottohäiriömerkintä) hieman ennen vuokrauksen alkamista.<br/><br/>
+
+Vuokranantaja pidättää oikeuden hinnaston ja vuokrasopimuksen ehtojen  muutoksiin kolmen (3) kalenterikuukauden ilmoitusajalla.<br/><br/>
+
+Maksun myöhästyessä veloitetaan hinnaston mukainen muistutusmaksu sekä viivästyskorko. Muistutusmaksu on kuukausikohtainen. Asiakas on velvollinen korvaamaan Pienvarastokeskus.fi:lle maksamattomien ja myöhässä maksettujen vuokrien korot, muistutusmaksut ja muut perintäkulut.<br/><br/>
+
+Mikäli vuokraa ei makseta sopimuksen mukaisesti ja vuokralaisella on vähintään kahden (2) kuukauden ajalta vuokra maksamatta, on vuokranantajalla oikeus purkaa sopimus lakkaamaan välittömästi. Tällöin voidaan estää vuokralaisen pääsy tiloihin. Vuokranantaja pidättää tällöin oikeuden ilman eri tuomiota realisoida ja hävittää vuokralaisen varastotilassa olevat tavarat tämän sopimuksen maksuvelvoitteiden täyttämiseksi. Realisointi voi olla esim. vapaaehtoinen huutokauppa tms. menetelmä. Jos vuokralainen maksaa erääntyneet vuokrat ennen realisointia, vuokralainen on velvollinen maksamaan ylimääräisen 150,00 € järjestelypalkkion vahingonkorvauksena vuokranantajalle.<br/><br/>
+
+Sopimuskauden päättymisen jälkeen vuokranantajalla on oikeus tyhjentää varastotila realisoimalla varastoon jäänyt omaisuus parhaaksi katsomallaan tavalla ellei vuokralainen ole sitä tehnyt tämän sopimuksen mukaisesti. Jos irtaimistolla on jotain arvoa, arvo kokonaisuudessaan jää vuokranantajalle korvaukseksi varastotilan viivästymiskorvauksena eikä vuokralaisella ole tällöin irtaimistoon mitään takaisinsaantioikeuksia.</p><br/>
+
+<h2> 4.6 § Sopimuksen siirtäminen, vuokralaisen ilmoittamisvelvollisuus ja muut asiat </h2>
+
+<p> Vuokralaisella ei ole oikeutta siirtää vuokrasopimusta kolmannelle osapuolelle ilman vuokranantajan kirjallista suostumusta. Epäilyttävissä tapauksissa vuokranantajalla on oikeus sulkea kulku varastoon. Samoin jos on aihetta epäillä, että varastotilaa käytetään Suomen lain vastaiseen toimintaan, vuokranantajalla on oikeus estää vuokralaisen pääsy varastotilaan ja velvollisuus selvittää asia viranomaisten kanssa yhteistyössä.<br/><br/>
+
+Vuokranantajalla on oikeus vuokralaista kuulematta siirtää vuokrasopimus kolmannelle osapuolelle.<br/><br/>
+
+Vuokralainen on velvollinen ilmoittamaan vuokranantajalle toimivat yhteystietonsa ja niiden muutokset viipymättä yhden (1) kuukauden sisällä muutoksesta. Muussa tapauksessa vuokralainen on itse vastuussa siitä vahingosta, joka mahdollisesti aiheutuu virheellisten yhteystietojen takia.<br/><br/>
+
+Vuokrasopimuksen allekirjoituksella tai maksamalla ensimmäisen vuokrakauden vuokran tai kun tavarat on viety varastoon, vuokralainen hyväksyy ja vahvistaa lukeneensa nämä vuokraehdot ja sitoutuu niitä noudattamaan.<br/><br/>
+
+Muutoin noudatetaan voimassa olevaa lakia liikehuoneiston vuokrauksesta. </p><br/>
+
+<h2> 5.	Vuokrasopimuksen allekirjoitus </h2>
+
+<p> Allekirjoittamalla tämän sopimuksen ymmärrän ja noudatan näitä sopimusehtoja. Tämän sopimuksen allekirjoittaminen tapahtuu verkkopankkitunnistautumisella, jonka tarjoana toimii Visma Sign. </p> <br/>
+
+<p style="padding-bottom:25px"> Sopimuksen allekirjoituspäivämäärä: TODAY'S DATE </p>
+
+<img class="logo" src="https://www.pienvarastokeskus.fi/wp-content/uploads/2018/06/Etusivukuva-e1528806619620.png">
+
+
+
+
+</body>
+</html>
