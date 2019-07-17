@@ -11,6 +11,8 @@ const options = {
   type: 'pdf'
 };
 
+//const html = fs.readFileSync('../docs/sopimus.html', 'utf8');
+
 app.use(express.static(__dirname + '/docs'));
 
 app.get('/', (req, res) => {
@@ -35,7 +37,7 @@ app.get('/', (req, res) => {
 
 const generateHtml = (request) => {
   return new Promise ((resolve, reject) => {
-    let document = JSDOM.fromFile('docs/sopimus.html').then(dom => {
+    let document = JSDOM.fromFile('../docs/sopimus.html').then(dom => {
       Object.keys(request).map((key) => {
         const tableObject = dom.window.document.getElementById(key);
         if (tableObject) {
@@ -61,6 +63,10 @@ const generatePdf = (html, request) => {
       resolve(res);
     });
   });
+};
+
+const sendToAirTable = () => {
+
 };
 
 const server = app.listen(8080, () => {
