@@ -4,7 +4,7 @@ const { generateAgreement, getAgreements } = require('../services/agreementServi
 const createAgreement = async (req, res, next) => {
   let agreement;
   try {
-    agreement = await generateAgreement(req.query, next);
+    agreement = await generateAgreement(req.body, next);
   } catch(error) {
     res.status(500).json({ error: error.toString() });
   }
