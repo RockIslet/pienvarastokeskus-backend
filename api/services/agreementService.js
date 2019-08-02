@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { generateHtml, generatePdf, readFilenames } = require('../helpers/helper');
 
-const generateAgreement = async (queryParams, next) => {
+const generateAgreement = async (queryParams) => {
   let pdf;
   try {
     const html = await generateHtml(queryParams);
@@ -12,7 +12,7 @@ const generateAgreement = async (queryParams, next) => {
   return pdf;
 }
 
-const getAgreements = async (queryParams, next) => {
+const getAgreements = async (queryParams) => {
   let files;
   try {
     files = await readFilenames();
