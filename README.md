@@ -1,5 +1,4 @@
 # Pienvarastokeskus REST-API
-
 ---
 ## Requirements
 For development, you will only need Node.js and a node global package.
@@ -11,12 +10,11 @@ For development, you will only need Node.js and a node global package.
     $ git clone https://github.com/matuisti/pienvarastokeskus-backend.git
     $ cd pienvarastokeskus-backend
     $ npm install
-## Configure app
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
-- A setting;
-- Another setting;
-- One more setting;
-## Running the project
+## Running the app
     $ npm start
+## Using the app
+    App uses the swagger rest api tool, you can find it here.
+    $ http://localhost:8080/swagger-ui
+
 ## Simple build for production
     $ npm build
