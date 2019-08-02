@@ -14,7 +14,8 @@ For development, you will only need Node.js and a node global package.
     $ npm start
 ## Using the app
     App uses the swagger rest api tool, you can find it here.
-    $ http://localhost:8080/swagger-ui
-
+    ```
+    http://localhost:8080/swagger-ui
+    ```
 ## Simple build for production
     $ npm build
