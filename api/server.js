@@ -5,16 +5,16 @@ const router = express.Router();
 const routes = require('./routes/router');
 const bodyParser = require('body-parser');
 const listEndpoints = require('express-list-endpoints');
-
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
+require('dotenv').config();
 
 app.use(express.static(__dirname + '/docs'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/', function(req, res) {
+app.get('/', function(res) {
   res.json(listEndpoints(app));
 });
 
