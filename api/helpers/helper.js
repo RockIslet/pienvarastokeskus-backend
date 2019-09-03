@@ -44,7 +44,12 @@ const readFilenames = () => {
   return new Promise ((resolve, reject) => {
     const folder = './docs/agreements';
     fs.readdir(folder, (error, files) => {
-      const list = files.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item));
+      let list;
+      if (files.length) {
+        list = files.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item));
+      } else {
+        list = { error: 'no files' };
+      }
       if (error) {
         reject(error);
       }
