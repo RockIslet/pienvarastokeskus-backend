@@ -44,13 +44,11 @@ const readFilenames = () => {
   return new Promise ((resolve, reject) => {
     const folder = './docs/agreements';
     fs.readdir(folder, (error, files) => {
-      const docs = files.map(file => {
-        return { file: file }
-      });
+      const list = files.filter(item => !(/(^|\/)\.[^\/\.]/g).test(item));
       if (error) {
         reject(error);
       }
-      resolve(docs);
+      resolve(list);
     });
   });
 }

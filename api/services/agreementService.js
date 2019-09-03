@@ -1,4 +1,4 @@
-const fs = require('fs').promises;
+const fs = require('fs');
 const VismaSign = require('../helpers/vismaSign');
 require('dotenv').config();
 const { generateHtml, generatePdf, readFilenames } = require('../helpers/helper');
@@ -16,7 +16,7 @@ const generateAgreement = async (queryParams) => {
 }
 
 async function getPdf(url) {
-  return await fs.readFile(url);
+  return await fs.readFileSync(url);
 }
 
 const signDocument = async (userData, pdfUrl) => {
