@@ -4,6 +4,7 @@ const app = express();
 const router = express.Router();
 const routes = require('./routes/router');
 const bodyParser = require('body-parser');
+
 const listEndpoints = require('express-list-endpoints');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
@@ -14,12 +15,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/', function(res) {
+app.get('/', function(req, res) {
   res.json(listEndpoints(app));
 });
 
-app.use('/api/v1', router);
 router.use(routes);
+app.use('/api/v1', router);
 
 app.use('/swagger-ui', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
